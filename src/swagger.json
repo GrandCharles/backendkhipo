@@ -3,7 +3,7 @@
   "info": {
     "title": "Api - Khipo",
     "description": "Api - Khipo",
-    "termsOfService": "https://backendkhipo.vercel.app/terms",
+    "termsOfService": "https://backendkhipo-qtbnalxvu-grandcharlesproject.vercel.app/terms",
     "contact": {
       "email:": "grandcharles@hotmail.com"
     },
@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://backendkhipo.vercel.app",
+      "url": "https://backendkhipo-qtbnalxvu-grandcharlesproject.vercel.app/",
       "description": "Apis de Desenvolvimento"
     }
   ],
