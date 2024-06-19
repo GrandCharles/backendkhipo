@@ -2,12 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "author": "GrandCharles <grandcharles@hotmail.com>",
-  "main": "src/index.ts",
+  "main": "index.ts",
   "license": "ISC",
   "scripts": {
-    "start": "node src/index.ts",
-    "dev": "ts-node-dev --transpile-only src/index.ts",
-    "server": "nodemon src/index.ts"
+    "start": "node src/server.ts",
+    "dev": "ts-node-dev --transpile-only src/server.ts"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
