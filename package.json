@@ -7,8 +7,7 @@
   "scripts": {
     "start": "node src/index.ts",
     "dev": "ts-node-dev --transpile-only src/index.ts",
-    "server": "nodemon src/index.ts",
-    "vercel-build": "npx prisma migrate deploy"
+    "server": "nodemon src/index.ts"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
