@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/server.ts",
     "dev": "ts-node-dev --transpile-only src/server.ts",
-    "postinstall": "prisma generate"
+    "vercel-build": "yarn prisma migrate dev"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
