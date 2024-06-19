@@ -1,0 +1,84 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Api - Khipo",
+    "description": "Api - Khipo",
+    "termsOfService": "http://localhost:3333/terms",
+    "contact": {
+      "email:": "grandcharles@hotmail.com"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333",
+      "description": "Apis de Desenvolvimento"
+    }
+  ],
+
+  "paths": {
+
+    "/listarTipoEvento": {
+      "get": {
+        "summary": "Listar Tipos de Eventos",
+        "description": "Rota para listar Tipos de Eventos",
+        "tags": ["TipoEvento"],
+
+        "security": [{"token": []}],
+
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schemas/listarTipoEvento"
+                }
+              }
+            }
+          }, 
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+
+  },
+
+  "components": {
+
+    "schemas": {
+      "listarTipoEvento": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        }
+      }
+    },
+
+    "securitySchemes": {
+        "token": {
+            "type": "http",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
+        }
+    }
+
+  }
+}
