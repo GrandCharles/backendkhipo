@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://backendkhipo.vercel.app:3333",
+      "url": "https://backendkhipo.vercel.app:9001",
       "description": "Apis de Desenvolvimento"
     }
   ],
