@@ -3,7 +3,7 @@
   "info": {
     "title": "Api - Khipo",
     "description": "Api - Khipo",
-    "termsOfService": "http://localhost:3333/terms",
+    "termsOfService": "https://backendkhipo.vercel.app/:9001/terms",
     "contact": {
       "email:": "grandcharles@hotmail.com"
     },
@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3333",
+      "url": "https://backendkhipo.vercel.app/:9001",
       "description": "Apis de Desenvolvimento"
     }
   ],
